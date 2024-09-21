@@ -13,26 +13,14 @@ class Solution
      */
     function mergeAlternately($word1, $word2)
     {
-        /*
         // Runtime: 8ms | 46.53%
         // Memory: 19.95mb | 58.22%
         $arr1 = str_split($word1);
         $arr2 = str_split($word2);
-        $size = max( count($arr1), count($arr2) );
+        $size = max(count($arr1), count($arr2));
         $arr = [];
-        for($i=0;$i<$size;$i++)
-        {
-            $arr[]= $arr1[$i] . $arr2[$i];
-        }
-        return implode('', $arr);
-        */
-
-        // Runtime: 3ms | 86.44%
-        // Memory: 19.40mb | 98.82%
-        $arr = [];
-        $size = max(strlen($word1), strlen($word2));
         for ($i = 0; $i < $size; $i++) {
-            $arr[] = $word1[$i] . $word2[$i];
+            $arr[] = $arr1[$i] . $arr2[$i];
         }
         return implode('', $arr);
     }
