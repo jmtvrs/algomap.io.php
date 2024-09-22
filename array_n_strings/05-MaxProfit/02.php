@@ -10,20 +10,17 @@ class Solution
      */
     function maxProfit($prices)
     {
-        // Runtime: 271ms | 84.94%
-        // Memory: 26.84mb | 40.15%
-        $pSize = count($prices);
+        // Runtime: 291ms | 39.96%
+        // Memory: 26.73mb | 60.20%
+        $last = array_shift($prices);
         $profit = 0;
-        $last = $prices[0];
-        for ($i = 1; $i < $pSize; $i++) {
-            $curr = $prices[$i];
-            if ($curr > $last) {
-                $profit = max($profit, ($curr - $last));
+        foreach ($prices as $price) {
+            if ($price > $last) {
+                $profit = max($profit, ($price - $last));
             } else {
-                $last = $curr;
+                $last = $price;
             }
         }
-
         return $profit;
     }
 }
