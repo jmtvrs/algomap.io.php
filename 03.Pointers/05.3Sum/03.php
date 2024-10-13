@@ -1,8 +1,7 @@
 <?php
 // 15. 3Sum
 // https://leetcode.com/problems/3sum/
-// Runtime: 291ms | 42.11%
-// Memory: 26.96mb | 74.74%
+
 
 class Solution
 {
