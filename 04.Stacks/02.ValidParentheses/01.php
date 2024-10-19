@@ -1,6 +1,6 @@
 <?php
 // 20. Valid Parentheses
-// https://leetcode.com/problems/baseball-game/
+// https://leetcode.com/problems/valid-parentheses/
 // Runtime: 1ms | 90.29%
 // Memory: 19.97mb | 67.24%
 
