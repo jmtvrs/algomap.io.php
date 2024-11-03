@@ -18,10 +18,8 @@ class Solution
         // Tradicional
         $l = 0;
         $r = count($nums) - 1;
-        //$m = floor(($l-$r)/2); // this could lead to integer overflow when dealing with big integers
-        $m = $l + floor(($r - $l) / 2);
-
         while ($l <= $r) {
+            //$m = floor(($l-$r)/2); // this could lead to integer overflow when dealing with big integers
             $m = $l + floor(($r - $l) / 2);
 
             if ($nums[$m] === $target) {
