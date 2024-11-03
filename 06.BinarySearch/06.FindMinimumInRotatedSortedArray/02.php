@@ -1,8 +1,8 @@
 <?php
 // 153. Find Minimum in Rotated Sorted Array
 // https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-// Runtime: ms | %
-// Memory: mb | %
+// Runtime: 0ms | 100%
+// Memory: 20.47mb | 9.09%
 // Time: O(log N) | Space: O(1) - Constant number of variables
 
 class Solution
