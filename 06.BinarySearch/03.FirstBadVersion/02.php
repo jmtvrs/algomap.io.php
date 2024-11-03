@@ -9,6 +9,8 @@
    public function isBadVersion($version){}
 */
 
+class VersionControl {}
+
 class Solution extends VersionControl
 {
     /**

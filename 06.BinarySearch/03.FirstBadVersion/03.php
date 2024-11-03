@@ -8,6 +8,7 @@
 /* The isBadVersion API is defined in the parent class VersionControl.
    public function isBadVersion($version){}
 */
+class VersionControl {}
 
 class Solution extends VersionControl
 {
